@@ -1,0 +1,70 @@
+<!doctype html> <!-- Usa HTML5. -->
+<html lang="es"> <!-- Define el idioma de la página. -->
+
+<head> <!-- Configuración y estilos. -->
+  <meta charset="UTF-8"> <!-- Permite mostrar acentos correctamente. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Adapta la página a celulares. -->
+  <title>Casos prácticos de JavaScript</title> <!-- Título de la pestaña. -->
+  <style>
+    /* Estilos básicos de la página. */
+    body {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      font: 16px Arial, sans-serif;
+      color: #222;
+      background: #f5f5f5;
+    }
+
+    header {
+      margin-bottom: 1.5rem;
+    }
+
+    #case-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .case-card {
+      padding: 1rem;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .case-card h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    .case-card p {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .function-example {
+      font-size: 0.9rem;
+    }
+
+    .function-result {
+      margin: 0;
+      padding: 0.75rem;
+      border-radius: 4px;
+      background: #e8f5e9;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+  </style> <!-- Termina el estilo. -->
+</head> <!-- Termina la configuración. -->
+
+<body> <!-- Contenido visible. -->
+  <header> <!-- Título e instrucciones. -->
+    <h1>15 funciones de JavaScript</h1> <!-- Título principal. -->
+    <p>Resultado de cada función:</p> <!-- Indica qué muestra cada caso. -->
+  </header> <!-- Termina el encabezado. -->
+  <main id="case-list" aria-label="Casos prácticos"></main> <!-- Aquí aparecen los ejercicios. -->
+  <script src="javascript.js" defer></script> <!-- Carga las funciones y crea los controles. -->
+</body> <!-- Termina el contenido. -->
+
+</html> <!-- Termina el documento. -->
